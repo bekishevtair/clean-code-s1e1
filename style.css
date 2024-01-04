@@ -13,7 +13,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .more_inf {
+.header .header__link {
   font-family: fantasy, cursive;
 }
 
@@ -26,12 +26,16 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.task-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.task-wrapper__input, .task-wrapper__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-row-wrapper {
+.task-wrapper__item {
   display: flex;
 }
 ul {
