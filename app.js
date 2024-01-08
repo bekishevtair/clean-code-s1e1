@@ -23,7 +23,7 @@ var createNewTaskElement=function(taskString){
     var checkBox=document.createElement("input");//checkbx
     //label
     var label=document.createElement("label");//label
-    //input (text)
+    //input (text)btn 
     var editInput=document.createElement("input");//text
     //button.edit
     var editButton=document.createElement("button");//edit button
@@ -32,6 +32,8 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    listItem.className="task-wrapper__item"
+    
     label.innerText=taskString;
     label.className="task-wrapper__label";
 
@@ -41,9 +43,9 @@ var createNewTaskElement=function(taskString){
     editInput.className="task-wrapper__input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit";
+    editButton.className="btn edit";
 
-    deleteButton.className="delete";
+    deleteButton.className="btn delete";
     deleteButtonImg.src="./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
 
